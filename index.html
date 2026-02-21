@@ -1,69 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Romina Gonzalez | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            color: #333;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romina González Ciarcelluti | Portafolio</title>
 
-        header {
-            background: #0f2c54;
-            color: white;
-            padding: 60px 20px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-        h1 {
-            margin: 0;
-            font-size: 40px;
-        }
+  <style>
+    :root{
+      --bg: #f6f7fb;
+      --text: #1c1c1c;
+      --muted: #6b7280;
+      --accent: #1f3c88;
+      --line: rgba(0,0,0,0.08);
+      --radius: 18px;
+    }
 
-        section {
-            padding: 50px 20px;
-        }
+    *{
+      box-sizing: border-box;
+    }
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #1c3d72;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+    body{
+      margin:0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-        footer {
-            background: #0f2c54;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+    .container{
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    h1{
+      font-family: 'Playfair Display', serif;
+      font-weight:500;
+      font-size: 42px;
+      margin-bottom:12px;
+    }
+
+    .subtitle{
+      color: var(--muted);
+      font-size:16px;
+      line-height:1.6;
+      max-width:600px;
+      margin:0 auto;
+    }
+
+    .btn-whatsapp{
+      display:inline-block;
+      margin-top:30px;
+      padding:12px 22px;
+      background: var(--accent);
+      color:white;
+      text-decoration:none;
+      border-radius: 10px;
+      font-weight:500;
+      transition:0.2s ease;
+    }
+
+    .btn-whatsapp:hover{
+      opacity:0.9;
+    }
+
+    section{
+      margin-top:70px;
+    }
+
+    h2{
+      font-family: 'Playfair Display', serif;
+      font-weight:500;
+      margin-bottom:25px;
+      font-size:24px;
+    }
+
+    .project-card{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:30px;
+      background:white;
+    }
+
+    .project-card h3{
+      margin-top:0;
+      font-weight:500;
+      font-size:18px;
+    }
+
+    .project-card p{
+      color: var(--muted);
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:18px;
+    }
+
+    .project-link{
+      text-decoration:none;
+      font-weight:500;
+      color: var(--accent);
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:90px;
+      text-align:center;
+      font-size:13px;
+      color: var(--muted);
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Romina Gonzalez</h1>
-    <p>Desarrolladora Web | Landing Pages | Sistemas personalizados</p>
-</header>
+  <div class="container">
 
-<section>
-    <h2>Sobre mí</h2>
-    <p>
-        Desarrollo soluciones digitales profesionales adaptadas a cada cliente.
-        Landing pages, sistemas personalizados y automatización digital.
-    </p>
-    <a href="#" class="btn">Ver proyectos</a>
-</section>
+    <header>
+      <h1>Romina González Ciarcelluti</h1>
+      <p class="subtitle">
+        Desarrollo landing pages y soluciones digitales con una estética simple,
+        clara y profesional.
+      </p>
+      <a class="btn-whatsapp" href="https://wa.me/543512066490" target="_blank">
+        Contactar por WhatsApp
+      </a>
+    </header>
 
-<footer>
-    © 2026 Romina Gonzalez - Todos los derechos reservados
-</footer>
+    <section>
+      <h2>Proyecto realizado</h2>
+
+      <div class="project-card">
+        <h3>Landing page – Estudio Jurídico Gastón Massa</h3>
+        <p>
+          Desarrollo completo de landing page profesional,
+          diseño responsive y puesta en línea con dominio propio.
+        </p>
+        <a class="project-link" href="https://gastonmassaabogado.com.ar/" target="_blank">
+          Ver sitio →
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Romina González Ciarcelluti
+    </footer>
+
+  </div>
 
 </body>
 </html>
